@@ -10,4 +10,4 @@ import { CommonModule } from '@angular/common';
   providers: [TableService],
   exports: [TableComponent],
 })
-export class TableModule {}
+export class ByeartTableModule {}
