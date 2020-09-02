@@ -1,0 +1,55 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+$themeHeader: #3e3c89;
+$themeText: #ffffff;
+
+.table-container {
+  background: #ffffff;
+  padding: 30px;
+  table {
+    border: 0px;
+    border-collapse: collapse;
+    tr {
+      th {
+        border: 0px;
+        background: $themeHeader;
+        color: $themeText;
+      }
+    }
+    td {
+      border: 0px;
+    }
+  }
+}
+.pagination {
+  width: 100%;
+  margin: 15px 0 15px 0px;
+  overflow: hidden;
+  .container {
+    width: 100%;
+    text-align: center;
+    ul {
+      list-style-type: none;
+      margin: 5px auto;
+      padding: 0px;
+      background: white;
+      display: inline-block;
+      li {
+        display: inline-block;
+        padding: 8px 15px;
+        cursor: pointer;
+        &.active {
+          border: 1px solid #d0d0d0;
+          pointer-events: none;
+          border-radius: 0.5rem;
+          background-color: $themeHeader;
+          color: white !important;
+          border-radius: 50%;
+        }
+        &.disabled {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
