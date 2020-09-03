@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  CONFIG: any = {
-    BASE_URL: 'https://jsonplaceholder.typicode.com',
-    LIMIT: 5,
-    SORTBY: 'name',
+  config: any = {
+    api: 'https://jsonplaceholder.typicode.com',
+    tableConfig: {
+      limit: 5,
+    },
+    styleConfig: {
+      theme: {
+        background: '#3e3c89',
+      },
+    },
   };
 }

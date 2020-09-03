@@ -1,11 +1,10 @@
-<p>A custom angular library for tables</p>
 <div class="container-fluid table-container">
   <div class="row">
     <div class="col-sm-12">
       <table class="table">
         <thead>
           <tr>
-            <th *ngFor="let header of tableHeaders">
+            <th *ngFor="let header of tableHeaders" [ngStyle]="config?.styleConfig?.theme">
               {{ header }}
             </th>
           </tr>
@@ -26,7 +25,9 @@
                 Previous Page
               </li>
               <ng-container *ngFor="let pageFlag of paginationArray; let i = index;">
-                <li [class.active]="pageFlag" *ngIf="i >= (page - 2) && i < (page + 2)" (click)="updatePage(i+1)">
+                <li [class.active]="pageFlag"
+                  [style.background]="pageFlag ? config?.styleConfig?.theme?.background : ''"
+                  *ngIf="i >= (page - 2) && i < (page + 2)" (click)="updatePage(i+1)">
                   {{i + 1}}
                 </li>
               </ng-container>

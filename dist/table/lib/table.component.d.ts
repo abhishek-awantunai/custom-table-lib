@@ -4,7 +4,7 @@ import * as i0 from "@angular/core";
 export declare class TableComponent implements OnInit {
     private _tableService;
     constructor(_tableService: TableService);
-    CONFIG: any;
+    config: any;
     tableData: any;
     tableHeaders: any;
     tableDataCopy: any;
@@ -20,5 +20,5 @@ export declare class TableComponent implements OnInit {
     updatePage(page: any): void;
     getTableData(): void;
     static ɵfac: i0.ɵɵFactoryDef<TableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TableComponent, "custom-table-lib", never, { "CONFIG": "CONFIG"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<TableComponent, "custom-table-lib", never, { "config": "config"; }, {}, never, never>;
 }

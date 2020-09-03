@@ -1,5 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 $themeHeader: #3e3c89;
+$themeHeaders: #ddf129;
 $themeText: #ffffff;
 
 .table-container {
@@ -11,7 +12,7 @@ $themeText: #ffffff;
     tr {
       th {
         border: 0px;
-        background: $themeHeader;
+        // background: $themeHeader;
         color: $themeText;
       }
     }
@@ -41,7 +42,7 @@ $themeText: #ffffff;
           border: 1px solid #d0d0d0;
           pointer-events: none;
           border-radius: 0.5rem;
-          background-color: $themeHeader;
+          // background-color: $themeHeader;
           color: white !important;
           border-radius: 50%;
         }

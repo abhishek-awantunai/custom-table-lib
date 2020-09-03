@@ -16,7 +16,12 @@
       "dom"
     ],
     "paths": {
-
+      "@byheart/table": [
+        "dist/table"
+      ],
+      "@byheart/table/*": [
+        "dist/table/*"
+      ]
     }
   }
 }

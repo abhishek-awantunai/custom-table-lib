@@ -8,7 +8,7 @@ import { TableService } from './table.service';
 })
 export class TableComponent implements OnInit {
   constructor(private _tableService: TableService) {}
-  @Input('CONFIG') CONFIG;
+  @Input('config') config;
   tableData;
   tableHeaders;
   tableDataCopy;
@@ -29,7 +29,7 @@ export class TableComponent implements OnInit {
   }
 
   createPagination() {
-    this.limit = this.CONFIG ? this.CONFIG['LIMIT'] : 10;
+    this.limit = this.config ? this.config['tableConfig']['limit'] : 10;
     this.showPagination = this.tableDataCopy.length > this.limit;
     if (this.showPagination) {
       const startIndex = (this.page - 1) * this.limit;
@@ -54,12 +54,10 @@ export class TableComponent implements OnInit {
   }
 
   getTableData() {
-    this._tableService
-      .getTableList(this.CONFIG['BASE_URL'])
-      .subscribe((res) => {
-        this.tableDataCopy = res;
-        this.tableHeaders = Object.keys(this.tableDataCopy[0]);
-        this.createPagination();
-      });
+    this._tableService.getTableList(this.config['api']).subscribe((res) => {
+      this.tableDataCopy = res;
+      this.tableHeaders = Object.keys(this.tableDataCopy[0]);
+      this.createPagination();
+    });
   }
 }
