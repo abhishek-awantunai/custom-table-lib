@@ -1,0 +1,12 @@
+[error] TypeError: Cannot read property '0' of undefined
+    at Object.typeToValue (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/reflection/src/type_to_value.js:46:66)
+    at /home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/reflection/src/typescript.js:75:58
+    at Array.map (<anonymous>)
+    at TypeScriptReflectionHost.getConstructorParameters (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/reflection/src/typescript.js:57:36)
+    at Object.getConstructorDependencies (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/annotations/src/util.js:29:36)
+    at Object.extractDirectiveMetadata (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/annotations/src/directive.js:243:34)
+    at ComponentDecoratorHandler.analyze (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/annotations/src/component.js:145:47)
+    at TraitCompiler.analyzeTrait (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/transform/src/compilation.js:346:40)
+    at analyze (/home/abhishek/Desktop/tabular/node_modules/@angular/compiler-cli/src/ngtsc/transform/src/compilation.js:298:58)
+    at async Promise.all (index 0)
+

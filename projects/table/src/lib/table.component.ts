@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { TableService } from './table.service';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'custom-table-lib',
@@ -7,14 +9,35 @@ import { TableService } from './table.service';
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit {
-  constructor(private _tableService: TableService) {}
   @Input('config') config;
+  dataFromRoute;
+  sharedData;
   tableData;
+  sub: Subscription;
   tableHeaders;
   tableDataCopy;
 
+  constructor(
+    private _tableService: TableService,
+    private activatedRoute: ActivatedRoute
+  ) {}
+
   ngOnInit(): void {
-    this.getTableData();
+    let idx = this.activatedRoute.pathFromRoot.length - 2;
+    console.log(idx);
+    while (this.sharedData == null && idx > 0) {
+      this.sub = this.activatedRoute.pathFromRoot[idx].data.subscribe(
+        (subData) => {
+          this.config = subData;
+          this.getTableData();
+        }
+      );
+      idx--;
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 
   currentPage: number = 1;

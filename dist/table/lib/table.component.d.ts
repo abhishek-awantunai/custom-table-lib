@@ -1,14 +1,21 @@
 import { OnInit, SimpleChanges } from '@angular/core';
 import { TableService } from './table.service';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import * as i0 from "@angular/core";
 export declare class TableComponent implements OnInit {
     private _tableService;
-    constructor(_tableService: TableService);
+    private activatedRoute;
     config: any;
+    dataFromRoute: any;
+    sharedData: any;
     tableData: any;
+    sub: Subscription;
     tableHeaders: any;
     tableDataCopy: any;
+    constructor(_tableService: TableService, activatedRoute: ActivatedRoute);
     ngOnInit(): void;
+    ngOnDestroy(): void;
     currentPage: number;
     paginationArray: Array<Boolean>;
     showPagination: Boolean;

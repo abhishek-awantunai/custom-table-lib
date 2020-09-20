@@ -1,5 +1,6 @@
 import { ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, ɵɵnextContext, ɵɵproperty, ɵɵadvance, ɵɵtextInterpolate1, ɵɵtemplate, ɵɵgetCurrentView, ɵɵlistener, ɵɵrestoreView, ɵɵstyleProp, ɵɵclassProp, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵdirectiveInject, ɵɵdefineComponent, ɵɵNgOnChangesFeature, Component, Input, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { NgForOf, NgIf, NgStyle, CommonModule } from '@angular/common';
 
 class TableService {
@@ -19,7 +20,7 @@ TableService.ɵprov = ɵɵdefineInjectable({ token: TableService, factory: Table
             }]
     }], function () { return [{ type: HttpClient }]; }, null); })();
 
-function TableComponent_th_6_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_th_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "th", 7);
     ɵɵtext(1);
     ɵɵelementEnd();
@@ -30,7 +31,7 @@ function TableComponent_th_6_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", header_r3, " ");
 } }
-function TableComponent_tr_8_td_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_tr_9_td_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "td");
     ɵɵtext(1);
     ɵɵelementEnd();
@@ -40,19 +41,19 @@ function TableComponent_tr_8_td_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", item_r4[header_r6], " ");
 } }
-function TableComponent_tr_8_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_tr_9_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "tr");
-    ɵɵtemplate(1, TableComponent_tr_8_td_1_Template, 2, 1, "td", 5);
+    ɵɵtemplate(1, TableComponent_tr_9_td_1_Template, 2, 1, "td", 5);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance(1);
     ɵɵproperty("ngForOf", ctx_r1.tableHeaders);
 } }
-function TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template(rf, ctx) { if (rf & 1) {
     const _r15 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template_li_click_0_listener() { ɵɵrestoreView(_r15); const i_r11 = ɵɵnextContext().index; const ctx_r13 = ɵɵnextContext(3); return ctx_r13.updatePage(i_r11 + 1); });
+    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template_li_click_0_listener() { ɵɵrestoreView(_r15); const i_r11 = ɵɵnextContext().index; const ctx_r13 = ɵɵnextContext(3); return ctx_r13.updatePage(i_r11 + 1); });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -65,9 +66,9 @@ function TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template(rf, ct
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", i_r11 + 1, " ");
 } }
-function TableComponent_ng_container_9_div_1_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_10_div_1_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template, 2, 5, "li", 12);
+    ɵɵtemplate(1, TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template, 2, 5, "li", 12);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const i_r11 = ctx.index;
@@ -75,18 +76,18 @@ function TableComponent_ng_container_9_div_1_ng_container_5_Template(rf, ctx) { 
     ɵɵadvance(1);
     ɵɵproperty("ngIf", i_r11 >= ctx_r9.page - 2 && i_r11 < ctx_r9.page + 2);
 } }
-function TableComponent_ng_container_9_div_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_10_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r18 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 9);
     ɵɵelementStart(1, "div", 10);
     ɵɵelementStart(2, "ul");
     ɵɵelementStart(3, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_Template_li_click_3_listener() { ɵɵrestoreView(_r18); const ctx_r17 = ɵɵnextContext(2); return ctx_r17.updatePage("prev"); });
+    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_Template_li_click_3_listener() { ɵɵrestoreView(_r18); const ctx_r17 = ɵɵnextContext(2); return ctx_r17.updatePage("prev"); });
     ɵɵtext(4, " Previous Page ");
     ɵɵelementEnd();
-    ɵɵtemplate(5, TableComponent_ng_container_9_div_1_ng_container_5_Template, 2, 1, "ng-container", 5);
+    ɵɵtemplate(5, TableComponent_ng_container_10_div_1_ng_container_5_Template, 2, 1, "ng-container", 5);
     ɵɵelementStart(6, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_Template_li_click_6_listener() { ɵɵrestoreView(_r18); const ctx_r19 = ɵɵnextContext(2); return ctx_r19.updatePage("next"); });
+    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_Template_li_click_6_listener() { ɵɵrestoreView(_r18); const ctx_r19 = ɵɵnextContext(2); return ctx_r19.updatePage("next"); });
     ɵɵtext(7, " Next Page ");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -101,9 +102,9 @@ function TableComponent_ng_container_9_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵclassProp("disabled", ctx_r8.page === (ctx_r8.paginationArray == null ? null : ctx_r8.paginationArray.length));
 } }
-function TableComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableComponent_ng_container_9_div_1_Template, 8, 5, "div", 8);
+    ɵɵtemplate(1, TableComponent_ng_container_10_div_1_Template, 8, 5, "div", 8);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r2 = ɵɵnextContext();
@@ -111,14 +112,26 @@ function TableComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     ɵɵproperty("ngIf", ctx_r2.showPagination);
 } }
 class TableComponent {
-    constructor(_tableService) {
+    constructor(_tableService, activatedRoute) {
         this._tableService = _tableService;
+        this.activatedRoute = activatedRoute;
         this.currentPage = 1;
         this.showPagination = false;
         this.page = 1;
     }
     ngOnInit() {
-        this.getTableData();
+        let idx = this.activatedRoute.pathFromRoot.length - 2;
+        console.log(idx);
+        while (this.sharedData == null && idx > 0) {
+            this.sub = this.activatedRoute.pathFromRoot[idx].data.subscribe((subData) => {
+                this.config = subData;
+                this.getTableData();
+            });
+            idx--;
+        }
+    }
+    ngOnDestroy() {
+        this.sub.unsubscribe();
     }
     ngOnChanges(changes) {
         console.log(changes);
@@ -156,27 +169,28 @@ class TableComponent {
         });
     }
 }
-TableComponent.ɵfac = function TableComponent_Factory(t) { return new (t || TableComponent)(ɵɵdirectiveInject(TableService)); };
-TableComponent.ɵcmp = ɵɵdefineComponent({ type: TableComponent, selectors: [["custom-table-lib"]], inputs: { config: "config" }, features: [ɵɵNgOnChangesFeature], decls: 10, vars: 3, consts: [[1, "container-fluid", "table-container"], [1, "row"], [1, "col-sm-12"], [1, "table"], [3, "ngStyle", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [4, "ngIf"], [3, "ngStyle"], ["class", "pagination", 4, "ngIf"], [1, "pagination"], [1, "container"], [3, "click"], [3, "active", "background", "click", 4, "ngIf"]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵelementStart(1, "div", 1);
-        ɵɵelementStart(2, "div", 2);
-        ɵɵelementStart(3, "table", 3);
-        ɵɵelementStart(4, "thead");
-        ɵɵelementStart(5, "tr");
-        ɵɵtemplate(6, TableComponent_th_6_Template, 2, 2, "th", 4);
+TableComponent.ɵfac = function TableComponent_Factory(t) { return new (t || TableComponent)(ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ActivatedRoute)); };
+TableComponent.ɵcmp = ɵɵdefineComponent({ type: TableComponent, selectors: [["custom-table-lib"]], inputs: { config: "config" }, features: [ɵɵNgOnChangesFeature], decls: 11, vars: 3, consts: [[1, "container-fluid", "table-container"], [1, "row"], [1, "col-sm-12"], [1, "table"], [3, "ngStyle", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [4, "ngIf"], [3, "ngStyle"], ["class", "pagination", 4, "ngIf"], [1, "pagination"], [1, "container"], [3, "click"], [3, "active", "background", "click", 4, "ngIf"]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵtext(0, "let me check this baba reee ");
+        ɵɵelementStart(1, "div", 0);
+        ɵɵelementStart(2, "div", 1);
+        ɵɵelementStart(3, "div", 2);
+        ɵɵelementStart(4, "table", 3);
+        ɵɵelementStart(5, "thead");
+        ɵɵelementStart(6, "tr");
+        ɵɵtemplate(7, TableComponent_th_7_Template, 2, 2, "th", 4);
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵelementStart(7, "tbody");
-        ɵɵtemplate(8, TableComponent_tr_8_Template, 2, 1, "tr", 5);
+        ɵɵelementStart(8, "tbody");
+        ɵɵtemplate(9, TableComponent_tr_9_Template, 2, 1, "tr", 5);
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵtemplate(9, TableComponent_ng_container_9_Template, 2, 1, "ng-container", 6);
+        ɵɵtemplate(10, TableComponent_ng_container_10_Template, 2, 1, "ng-container", 6);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
     } if (rf & 2) {
-        ɵɵadvance(6);
+        ɵɵadvance(7);
         ɵɵproperty("ngForOf", ctx.tableHeaders);
         ɵɵadvance(2);
         ɵɵproperty("ngForOf", ctx.tableData);
@@ -190,21 +204,60 @@ TableComponent.ɵcmp = ɵɵdefineComponent({ type: TableComponent, selectors: [[
                 templateUrl: './table.component.html',
                 styleUrls: ['./table.component.scss'],
             }]
-    }], function () { return [{ type: TableService }]; }, { config: [{
+    }], function () { return [{ type: TableService }, { type: ActivatedRoute }]; }, { config: [{
             type: Input,
             args: ['config']
         }] }); })();
 
+class MobileComponent {
+}
+MobileComponent.ɵfac = function MobileComponent_Factory(t) { return new (t || MobileComponent)(); };
+MobileComponent.ɵcmp = ɵɵdefineComponent({ type: MobileComponent, selectors: [["custom-mobile"]], decls: 2, vars: 0, template: function MobileComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "h1");
+        ɵɵtext(1, "Mobile component");
+        ɵɵelementEnd();
+    } }, encapsulation: 2 });
+/*@__PURE__*/ (function () { ɵsetClassMetadata(MobileComponent, [{
+        type: Component,
+        args: [{
+                selector: 'custom-mobile',
+                template: ` <h1>Mobile component</h1> `,
+                styles: [],
+            }]
+    }], null, null); })();
+
+class LadderComponent {
+}
+LadderComponent.ɵfac = function LadderComponent_Factory(t) { return new (t || LadderComponent)(); };
+LadderComponent.ɵcmp = ɵɵdefineComponent({ type: LadderComponent, selectors: [["custom-ladder"]], decls: 2, vars: 0, template: function LadderComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "h1");
+        ɵɵtext(1, "Ladder component");
+        ɵɵelementEnd();
+    } }, encapsulation: 2 });
+/*@__PURE__*/ (function () { ɵsetClassMetadata(LadderComponent, [{
+        type: Component,
+        args: [{
+                selector: 'custom-ladder',
+                template: ` <h1>Ladder component</h1> `,
+                styles: [],
+            }]
+    }], null, null); })();
+
+const route = [
+    { path: '', component: TableComponent },
+    { path: 'ladder', component: LadderComponent },
+    { path: 'mobile', component: MobileComponent },
+];
 class ByeartTableModule {
 }
 ByeartTableModule.ɵmod = ɵɵdefineNgModule({ type: ByeartTableModule });
-ByeartTableModule.ɵinj = ɵɵdefineInjector({ factory: function ByeartTableModule_Factory(t) { return new (t || ByeartTableModule)(); }, providers: [TableService], imports: [[HttpClientModule, CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(ByeartTableModule, { declarations: [TableComponent], imports: [HttpClientModule, CommonModule], exports: [TableComponent] }); })();
+ByeartTableModule.ɵinj = ɵɵdefineInjector({ factory: function ByeartTableModule_Factory(t) { return new (t || ByeartTableModule)(); }, providers: [TableService], imports: [[HttpClientModule, CommonModule, RouterModule.forChild(route)]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(ByeartTableModule, { declarations: [TableComponent, LadderComponent, MobileComponent], imports: [HttpClientModule, CommonModule, RouterModule], exports: [TableComponent] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(ByeartTableModule, [{
         type: NgModule,
         args: [{
-                declarations: [TableComponent],
-                imports: [HttpClientModule, CommonModule],
+                declarations: [TableComponent, LadderComponent, MobileComponent],
+                imports: [HttpClientModule, CommonModule, RouterModule.forChild(route)],
                 providers: [TableService],
                 exports: [TableComponent],
             }]
