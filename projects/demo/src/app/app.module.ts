@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       styleConfig: {
         theme: {
-          background: '#3e3c89',
+          background: 'red',
         },
       },
     },

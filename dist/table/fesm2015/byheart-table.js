@@ -20,7 +20,7 @@ TableService.ɵprov = ɵɵdefineInjectable({ token: TableService, factory: Table
             }]
     }], function () { return [{ type: HttpClient }]; }, null); })();
 
-function TableComponent_th_7_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_th_6_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "th", 7);
     ɵɵtext(1);
     ɵɵelementEnd();
@@ -31,7 +31,7 @@ function TableComponent_th_7_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", header_r3, " ");
 } }
-function TableComponent_tr_9_td_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_tr_8_td_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "td");
     ɵɵtext(1);
     ɵɵelementEnd();
@@ -41,19 +41,19 @@ function TableComponent_tr_9_td_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", item_r4[header_r6], " ");
 } }
-function TableComponent_tr_9_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_tr_8_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementStart(0, "tr");
-    ɵɵtemplate(1, TableComponent_tr_9_td_1_Template, 2, 1, "td", 5);
+    ɵɵtemplate(1, TableComponent_tr_8_td_1_Template, 2, 1, "td", 5);
     ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵadvance(1);
     ɵɵproperty("ngForOf", ctx_r1.tableHeaders);
 } }
-function TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template(rf, ctx) { if (rf & 1) {
     const _r15 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template_li_click_0_listener() { ɵɵrestoreView(_r15); const i_r11 = ɵɵnextContext().index; const ctx_r13 = ɵɵnextContext(3); return ctx_r13.updatePage(i_r11 + 1); });
+    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template_li_click_0_listener() { ɵɵrestoreView(_r15); const i_r11 = ɵɵnextContext().index; const ctx_r13 = ɵɵnextContext(3); return ctx_r13.updatePage(i_r11 + 1); });
     ɵɵtext(1);
     ɵɵelementEnd();
 } if (rf & 2) {
@@ -66,9 +66,9 @@ function TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template(rf, c
     ɵɵadvance(1);
     ɵɵtextInterpolate1(" ", i_r11 + 1, " ");
 } }
-function TableComponent_ng_container_10_div_1_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_9_div_1_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableComponent_ng_container_10_div_1_ng_container_5_li_1_Template, 2, 5, "li", 12);
+    ɵɵtemplate(1, TableComponent_ng_container_9_div_1_ng_container_5_li_1_Template, 2, 5, "li", 12);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const i_r11 = ctx.index;
@@ -76,18 +76,18 @@ function TableComponent_ng_container_10_div_1_ng_container_5_Template(rf, ctx) {
     ɵɵadvance(1);
     ɵɵproperty("ngIf", i_r11 >= ctx_r9.page - 2 && i_r11 < ctx_r9.page + 2);
 } }
-function TableComponent_ng_container_10_div_1_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_9_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r18 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 9);
     ɵɵelementStart(1, "div", 10);
     ɵɵelementStart(2, "ul");
     ɵɵelementStart(3, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_Template_li_click_3_listener() { ɵɵrestoreView(_r18); const ctx_r17 = ɵɵnextContext(2); return ctx_r17.updatePage("prev"); });
+    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_Template_li_click_3_listener() { ɵɵrestoreView(_r18); const ctx_r17 = ɵɵnextContext(2); return ctx_r17.updatePage("prev"); });
     ɵɵtext(4, " Previous Page ");
     ɵɵelementEnd();
-    ɵɵtemplate(5, TableComponent_ng_container_10_div_1_ng_container_5_Template, 2, 1, "ng-container", 5);
+    ɵɵtemplate(5, TableComponent_ng_container_9_div_1_ng_container_5_Template, 2, 1, "ng-container", 5);
     ɵɵelementStart(6, "li", 11);
-    ɵɵlistener("click", function TableComponent_ng_container_10_div_1_Template_li_click_6_listener() { ɵɵrestoreView(_r18); const ctx_r19 = ɵɵnextContext(2); return ctx_r19.updatePage("next"); });
+    ɵɵlistener("click", function TableComponent_ng_container_9_div_1_Template_li_click_6_listener() { ɵɵrestoreView(_r18); const ctx_r19 = ɵɵnextContext(2); return ctx_r19.updatePage("next"); });
     ɵɵtext(7, " Next Page ");
     ɵɵelementEnd();
     ɵɵelementEnd();
@@ -102,9 +102,9 @@ function TableComponent_ng_container_10_div_1_Template(rf, ctx) { if (rf & 1) {
     ɵɵadvance(1);
     ɵɵclassProp("disabled", ctx_r8.page === (ctx_r8.paginationArray == null ? null : ctx_r8.paginationArray.length));
 } }
-function TableComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
+function TableComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableComponent_ng_container_10_div_1_Template, 8, 5, "div", 8);
+    ɵɵtemplate(1, TableComponent_ng_container_9_div_1_Template, 8, 5, "div", 8);
     ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r2 = ɵɵnextContext();
@@ -170,27 +170,26 @@ class TableComponent {
     }
 }
 TableComponent.ɵfac = function TableComponent_Factory(t) { return new (t || TableComponent)(ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ActivatedRoute)); };
-TableComponent.ɵcmp = ɵɵdefineComponent({ type: TableComponent, selectors: [["custom-table-lib"]], inputs: { config: "config" }, features: [ɵɵNgOnChangesFeature], decls: 11, vars: 3, consts: [[1, "container-fluid", "table-container"], [1, "row"], [1, "col-sm-12"], [1, "table"], [3, "ngStyle", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [4, "ngIf"], [3, "ngStyle"], ["class", "pagination", 4, "ngIf"], [1, "pagination"], [1, "container"], [3, "click"], [3, "active", "background", "click", 4, "ngIf"]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵtext(0, "let me check this baba reee ");
-        ɵɵelementStart(1, "div", 0);
-        ɵɵelementStart(2, "div", 1);
-        ɵɵelementStart(3, "div", 2);
-        ɵɵelementStart(4, "table", 3);
-        ɵɵelementStart(5, "thead");
-        ɵɵelementStart(6, "tr");
-        ɵɵtemplate(7, TableComponent_th_7_Template, 2, 2, "th", 4);
+TableComponent.ɵcmp = ɵɵdefineComponent({ type: TableComponent, selectors: [["custom-table-lib"]], inputs: { config: "config" }, features: [ɵɵNgOnChangesFeature], decls: 10, vars: 3, consts: [[1, "container-fluid", "table-container"], [1, "row"], [1, "col-sm-12"], [1, "table"], [3, "ngStyle", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [4, "ngIf"], [3, "ngStyle"], ["class", "pagination", 4, "ngIf"], [1, "pagination"], [1, "container"], [3, "click"], [3, "active", "background", "click", 4, "ngIf"]], template: function TableComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "div", 0);
+        ɵɵelementStart(1, "div", 1);
+        ɵɵelementStart(2, "div", 2);
+        ɵɵelementStart(3, "table", 3);
+        ɵɵelementStart(4, "thead");
+        ɵɵelementStart(5, "tr");
+        ɵɵtemplate(6, TableComponent_th_6_Template, 2, 2, "th", 4);
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵelementStart(8, "tbody");
-        ɵɵtemplate(9, TableComponent_tr_9_Template, 2, 1, "tr", 5);
+        ɵɵelementStart(7, "tbody");
+        ɵɵtemplate(8, TableComponent_tr_8_Template, 2, 1, "tr", 5);
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵtemplate(10, TableComponent_ng_container_10_Template, 2, 1, "ng-container", 6);
+        ɵɵtemplate(9, TableComponent_ng_container_9_Template, 2, 1, "ng-container", 6);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
     } if (rf & 2) {
-        ɵɵadvance(7);
+        ɵɵadvance(6);
         ɵɵproperty("ngForOf", ctx.tableHeaders);
         ɵɵadvance(2);
         ɵɵproperty("ngForOf", ctx.tableData);
